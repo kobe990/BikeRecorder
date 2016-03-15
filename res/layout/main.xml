@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayoutTabHost"
+        android:orientation="vertical">
+        <TabWidget
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabs"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true">
+        </TabWidget>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+            <RadioGroup
+                android:id="@+id/main_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:layout_marginBottom="4dp">
+
+                <RadioButton
+                    android:id="@+id/record_radio"
+                    android:checked="true"
+                    android:text="记录"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/record"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:background="@drawable/button_bac_colors"/>
+
+                <RadioButton
+                    android:id="@+id/goals_radio"
+                    android:text="目标"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/goals"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:background="@drawable/button_bac_colors"/>
+            </RadioGroup>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@android:id/tabcontent">
+        </FrameLayout>
+    </RelativeLayout>
+</TabHost>
