@@ -1,4 +1,5 @@
-#### BikeRecorder
+#### BikeRecorder 
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=plastic)]()
 
 喜爱骑行的人都喜欢用一个记录仪器来记录自己的骑行数据，主要分为两种，一种是用物理的记录仪，一种用骑行app。但是在用过几种主流app后，
 本人发现这些app都没有我急需的一个功能：针对不同车辆进行数据分类。一般的骑行爱好者都会有多辆自行车，我并不希望把每辆车的骑行数据都
